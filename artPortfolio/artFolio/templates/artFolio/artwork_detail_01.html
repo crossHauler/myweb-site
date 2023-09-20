@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block body_content %}
+<style>
+  .responsive-image {
+    max-width: 720px;
+    height: 720px;
+  }
+  .image-details {
+    max-width: 720px;
+    margin: 0 auto;
+    text-align: center;
+  }
+</style>
+
+
+<div class="image-details">
+	<h2>{{ artwork.title }}</h2>
+<img src="{{ artwork.image.url }}" alt="{{ artwork.title }}" class="responsive-image">
+  
+  <p>Author: {{ artwork.author }}</p>
+  <p>Description: {{ artwork.description }}</p>
+  <h2>Purchase</h2>
+  <p><a href="https://cash.app/$geekeeOne" target="_blank">CashAPP</a></p>
+
+  <p><a href="https://venmo.com/u/geekeeOne" target="_blank">Venmo</a></p>
+</div>
+
+
+{% endblock %}
+
+
+
+<style>
+  .responsive-image {
+    max-width: 540px;
+    height: 960px;
+  }
+</style>
+<img src="{{ artwork.image.url }}" alt="{{ artwork.title }}" class="responsive-image">

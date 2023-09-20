@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {% load static %}
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>MJ Walls Art</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="{% static 'artFolio/css/bootstrap.css' %}" />
+
+  <!-- Custom styles for this template -->
+  <link href=" {% static 'artFolio/css/style.css' %}" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="{% static 'artFolio/css/responsive.css' %}" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container d-block">
+          <div class="main_nav_menu">
+            <div class="fk_width">
+              <div class="custom_menu-btn">
+                <button onclick="openNav()">
+                  <span class="s-1"> </span>
+                  <span class="s-2"> </span>
+                  <span class="s-3"> </span>
+                </button>
+              </div>
+              <div id="myNav" class="overlay">
+                <div class="overlay-content">
+                  <a class="" href="index.html">Home <span class="sr-only">(current)</span></a>
+                  <a class="" href="about.html">About </a>
+                  <a class="" href="gallery.html">Gallery </a>
+                  <a class="" href="blog.html">Blog </a>
+                  <a class="" href="testimonial.html">Testimonial </a>
+                </div>
+              </div>
+            </div>
+            <a class="navbar-brand" href="index.html">
+              <span>
+                MJ Walls Art Studio
+              </span>
+            </a>
+            <div class="user_option">
+              <a href="#">
+                login
+              </a>
+              <form class="form-inline ">
+                <button class="btn  nav_search-btn" type="submit"></button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+
+{% block body_content %}
+{% endblock %}
+
+  <!-- end info section -->
+
+  <!-- footer section -->
+  <footer class="footer_section ">
+    <div class="container">
+      <p>
+        &copy; <span id="displayYear"></span> All Rights Reserved. Design by
+        <a href="#">MJ Walls Art Studios</a>
+      </p>
+    </div>
+  </footer>
+  <!-- footer section -->
+
+  <script src="{% static 'artFolio/js/jquery-3.4.1.min.js' %}"></script>
+  <script src="{% static 'artFolio/js/bootstrap.js' %}"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="{% static 'artFolio/js/custom.js' %}"></script>
+</body>
+
+</html>
